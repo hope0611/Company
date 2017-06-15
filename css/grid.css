@@ -1,0 +1,33 @@
+/* grids file */
+
+/*all attributes*/
+*{
+	box-sizing:border-box;
+}
+
+/*looking into html, class starts(^=) with 'grid-col-' */
+[class ^='grid-col-']{
+	float:left;
+}
+
+
+
+@media (min-width: 30em){
+	.grid-col-1of5 {
+		width: 20%
+	}
+}
+
+@media (max-width: 30em) {
+	.grid-col-1of5 {
+		width: 100%
+	}
+}
+
+.grid-row::after {
+	content:"";
+	display: block;
+	clear:both;
+}
+
+
