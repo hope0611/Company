@@ -5,23 +5,57 @@ body {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
-  margin-top: .1rem;
+  font-size: 2.2rem;
+  margin-top: .1px;
   margin-bottom: 1.5rem;
   text-align: center;
+  letter-spacing: .4rem;
+  color: black;
+  text-decoration: none;
 }
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: .85rem;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin-top: .25rem;
+  margin-bottom: .50rem;
+}
+
+ul {
+  display: inline-block;
+  -webkit-margin-before: 0em;
+  -webkit-padding-start: 0px;
+}
+
+li img {
+  display: inline-block;
+  -webkit-margin-before: 0em;
+  -webkit-padding-start: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 
 /* Style the links inside the top navigation bar */
 .topnav {
     background-color: white;
     overflow: hidden;
     text-align: center;
+    padding-bottom: 1.5rem;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
     font-family: 'Open Sans', sans-serif;
-    padding: 1.5rem;
+    padding: 1.1rem;
     color: #333;
     text-align: center;
     text-decoration: none;
@@ -41,6 +75,7 @@ h1 {
     color: white;
 }
 
+<<<<<<< Updated upstream
 /*ABOUT JASMINE*/
 
 .aboutimage {
@@ -65,4 +100,181 @@ p {
     font-size: 14px;
 }
 
+=======
+.products li:hover {
+  opacity:0.6;
+  transition:0.5s ease-out;
+}
+
+ul.products li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.products {
+    display: inline-block;
+    max-width: 100%;
+    display: inline;
+}
+
+/*------------------- responsive pages -----------------*/
+
+@media (min-width: 300px) and (max-width: 520px) {
+    .menu {
+        display: none;
+    }
+    .wrapper {
+        height: 100px;
+        width: 20%;
+    }
+    .container img {
+        width: 50% !important;
+    }
+    .box {
+        background: #F8F8F8;
+        padding: 4em 1em 1em 1em;
+        width: 100%;
+    }
+    .cl {
+        top: 0;
+        right: 0.5em;
+    }
+    .left_col {
+        margin-left: 40px;
+    }
+    .mainimage img {
+        width: 90%;
+        height: auto;
+    }
+    .products {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 521px) and (max-width: 749px) {
+    .container {
+        width: 100%;
+        height: 180px;
+    }
+    .box {
+        margin: auto;
+        background: #F8F8F8;
+        padding: 4em 1em 1em 1em;
+        width: 80%;
+    }
+    .cl {
+        top: 0;
+        right: 0.5em;
+    }
+    .left_col {
+        margin-left: 40px;
+    }
+    .mainimage img {
+        width: 450px;
+    }
+    .products {
+        width: 100%;
+        height: 100%;
+    }
+    #detail {
+        width: 85%;
+        height: auto;
+    }
+    .contact_type {
+        text-align: center;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        height: 200px;
+    }
+    .box {
+        width: 70%;
+    }
+    .infoss {
+        width: 100%;
+        height: 200px;
+    }
+    .right_col {
+        position: absolute;
+        top: 350px;
+        left: 500px;
+    }
+    .left_col {
+        margin-left: 40px;
+    }
+    .mainimage img {
+        width: 450px;
+        height: 300px;
+    }
+    .products{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .container {
+        width: 60%;
+        height: 500px;
+    }
+    .box {
+        width: 60%;
+    }
+    .infoss {
+        width: 100%;
+        height: 300px;
+    }
+    .right_col {
+        position: absolute;
+        top: 350px;
+        right: 200px;
+        padding-left: 10px;
+    }
+    .left_col {
+        margin-left: 40px;
+    }
+    .mainimage img {
+        width: 50%;
+        height: 50%;
+    }
+    .products {
+        width: 333px;
+        height: 33.33%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 60%;
+        height: 500px;
+    }
+    .box {
+        width: 60%;
+    }
+    .infoss {
+        width: 100%;
+        height: 300px;
+    }
+    .left_col {
+        margin-left: 40px;
+    }
+    .mainimage img {
+        width: 450px;
+        height: 300px;
+    }
+    .products {
+        width: 450px;
+        height: 33.33%;
+    }
+    .right_col {
+        position: absolute;
+        top: 350px;
+        right: 250px;
+    }
+}
+>>>>>>> Stashed changes
 
